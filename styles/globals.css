@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+p {
+  margin: 15px 0;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(86, 86, 255);
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+header {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 5px;
+  margin-bottom: 40px;
+  border-bottom: #e8eaed 1px solid;
+}
+
+header a {
+  color: #000;
+}
+
+b {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  padding-left: 20px;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.btn {
+  display: inline-block;
+  background: steelblue;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btn-back {
+  background: #f4f4f4;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  margin-top: 30px;
+}
+
+.card {
+  cursor: pointer;
+  color: #626262;
+  width: 50vw;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.card > h3 {
+  font-size: 1.875rem;
+  color: #000;
+}
+
+@media screen and (max-width: 1030px) {
+  .posts {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+.card-page {
+  padding: 15px 30px;
+}
+
+.post-title {
+  margin: 10px 0;
+}
+
+.post-date {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.post-body ul,
+ol {
+  font-size: 110%;
+  line-height: 2.3;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.post-body pre {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 20px 0;
+  line-height: 2.3;
+}
+
+@media (max-width: 500px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}
+
+.blog-page {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  color: #000;
+}
+
+.card-page {
+  width: 80%;
+}
+
+img {
+  width: 70% !important;
+}
+
+@media screen and (max-width: 1100px) {
+  img {
+    width: 100% !important;
+  }
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: black;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
