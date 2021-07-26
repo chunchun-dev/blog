@@ -78,7 +78,7 @@ b {
   margin-bottom: 20px;
 }
 
-.posts {
+#posts {
   display: flex;
   flex-direction: column;
   padding-left: 25vw;
@@ -100,7 +100,7 @@ b {
 }
 
 @media screen and (max-width: 1030px) {
-  .posts {
+  #posts {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -139,7 +139,7 @@ ol {
 }
 
 @media (max-width: 500px) {
-  .posts {
+  #posts {
     grid-template-columns: 1fr;
   }
 }
@@ -175,4 +175,65 @@ img {
 ::selection {
   color: white;
   background: black;
+}
+
+.hero {
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.desc {
+  font-size: 1.3rem;
+  color: rgb(85, 84, 84);
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 17px 48px;
+  color: #fff;
+  background-color: #3b6fff;
+  height: 48px;
+}
+
+.cta:hover{
+  color: white;
+  background-color: #000;
+}
+
+#featured {
+  width: min-content;
+  border-bottom: #3b6fff 0.1rem solid;
+  font-size: 2.2rem;
+}
+
+@media screen and (max-width: 373px) {
+  .hero {
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+  }
 }

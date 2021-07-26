@@ -4,6 +4,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import Post from '../components/Post'
 import styles from '../styles/Home.module.css'
+import Hero from '../components/Hero'
 
 export default function Home({posts}) {
   return (
@@ -14,7 +15,10 @@ export default function Home({posts}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="posts">
+      <Hero/>
+
+      <div id="posts">
+        <h1 id='featured'>Posts</h1>
         {posts.map((post, index) => (
           <Post post={post} key={index}/>
         ))}
